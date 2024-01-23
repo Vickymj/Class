@@ -7,7 +7,6 @@ from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser
 )
 
-
 class MyUserManager(BaseUserManager):
     def create_user(self, mobile_no, password=None):
         if not mobile_no:
